@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main_box{
+        background-image: url(yes2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+
+    }
+    .main_box .box1{
+        background:rgba(255,255,255,0.1) ;
+        box-shadow: 0 0 6px rgba(255,255,255,0.5);
+        width: 280px;
+        height: 100vh;
+        position: fixed;
+        left: -280px;
+        transition: all .3s linear;
+
+        
+    }
+    .logo{
+         text-transform: capitalize;
+         box-shadow: 0 0 6px rgba(255,255,255,0.5);
+         width: 100%;
+        height: 60px;
+        position: absolute;
+         line-height: 60px;
+ 
+
+
+    }
+     h1{
+        margin-left: 40px;
+        font-size: 50px;
+        font-weight: 900;
+        background-image: url(gif.gif);
+        background-size: cover;
+        background-position: center;
+        color: transparent;
+       -webkit-background-clip: text;
+
+     }
+    span{
+        color: blue;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 900;
+     }
+     .nav ul{
+         display: block;
+         margin-top: 60px;
+              
+      }
+      .nav ul li{
+            list-style: none;
+             padding: 30px;
+             border-bottom: 1px solid rgba(255,255,255,0.1);
+  
+      }
+      .nav ul li:hover{
+          border-left: 1px solid white;
+          box-shadow: 0 0 6px rgba(255,255,255,0.5);
+          transition: all .3s linear;
+
+      }
+
+      .nav ul li a{
+        text-decoration: none;
+          
+
+          color: antiquewhite;
+      }
+      .nav ul li i{
+          color: aliceblue;
+           font-size: 18px;
+          
+      }
+      .btn1{
+          color: white;
+          position: absolute;
+          top:4%;
+          left:1%;
+          font-size: 20px;
+          cursor: pointer;
+          
+      }
+      .box1 .btn2{
+          color: white;
+          position: absolute;
+          left:80%;
+          top:4%;
+          opacity: 0;
+          
+          font-size: 20px;
+          
+      }
+      #check{
+          display: none;
+      }
+      #check:checked~.box1{
+          left: 0;
+ 
+
+      }
+      #check:checked~.btn1{
+          opacity: 0;
+      }
+      #check:checked~.box1 .btn2{
+          opacity: 1;
+      }
+
+      @media(max-width:500px){
+        .main_box .box1{
+          width: 100%;
+          left: -500px;
+         
+                 
+      }
+
+      .nav ul{
+         display: block;
+         margin-top: 60px;
+             
+         
+      }
+      .nav ul li{
+        align-items: center;
+
+
+      }
+    }
+
+</style>
+<body>
+    <div class="main_box">
+        <div class="logo">
+            <h1>heven<span>world</span></h1>
+        </div>
+        <input type="checkbox" id="check">
+        <div class="btn1">
+            <label for="check"><i class="fa-solid fa-bars"></i></label>
+        </div>
+        <div class="box1">
+            
+
+            <div class="logo">
+                <h1>heven<span>world</span></h1>
+            </div>
+            <div class="btn2">
+              <label for="check"><i class="fa-solid fa-xmark"></i></label>
+
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><i class="fa-solid fa-house"></i>
+                        <a href="">HOME</a></li>
+                    <li><i class="fa-brands fa-envira"></i>
+                        <a href="">GALLERY</a></li>
+                    <li><i class="fa-brands fa-servicestack"></i>
+                        <a href="">SERVIES</a></li>
+                    <li><i class="fa-regular fa-address-card"></i>
+                        <a href="">ABOUT US</a></li>
+                    <li><i class="fa-solid fa-file-contract"></i>
+                        <a href="">CONTACT US</a></li>
+                        <li><i class="fa-solid fa-file-contract"></i>
+                            <a href="">CONTACT US</a></li>
+                            
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
